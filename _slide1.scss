@@ -1,0 +1,123 @@
+body {
+    height: 100%;
+    max-height: 100%;
+}
+
+.navbar-content {
+    display: none;
+}
+
+.first-part {
+    background-image: url("images/photos/image-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 538px;
+
+    .burger-menu {
+        position: absolute;
+        top: 32px;
+        right: 24px;
+
+        .burger-checkbox {
+            display: none;
+            
+        }
+    }
+    
+    .design {
+        text-align: center;
+        padding-top: 100px;
+        
+        .heading {
+            font-size: 40px;
+            text-transform: uppercase;
+            color: white;
+            line-height: 50px;
+            font-family: 'Fraunces', serif;  
+            padding-bottom: 50px; 
+            letter-spacing: 5px;
+        }
+
+        .arrow-down {
+            border: 6px;
+        }
+    }
+
+    .logo {
+        top: 32px;
+        left: 24px;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        height: 100%;
+        max-height: 100%;
+    }
+    
+    .first-part {
+        background-image: url("images/photos/image-header.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 900px;
+
+        .navbar {
+            height: 33px;
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            .navbar-content {
+                display: flex;
+                justify-content: space-evenly;
+                width: 600px;
+                flex-direction: row;
+            }
+
+            .burger-menu {
+                position: absolute;
+                top: 32px;
+                right: 24px;
+        
+                .burger-checkbox {
+                    display: none;
+                    
+                }
+                .burger {
+                    display: none;
+                }
+            }
+            
+        }
+        .design {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 15%;
+            
+            .heading {
+                font-size: 56px;
+                text-transform: uppercase;
+                color: white;
+                line-height: 69px;
+                font-family: 'Fraunces', serif;  
+                padding-bottom: 100px; 
+                letter-spacing: 5px;
+            }
+    
+            .arrow-down {
+                border: 6px;
+            }
+        }
+    
+        .logo {
+            top: 32px;
+            left: 24px;
+            position: absolute;
+        }
+    }
+}

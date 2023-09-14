@@ -1,0 +1,33 @@
+footer {
+    background-color: #90D4C6;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer-info {
+        width: 80%;
+        height: 60%;
+        text-align: center;
+        .footer-things {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: #458D7E;
+            font-family: 'Barlow', sans-serif;
+            font-size: 18px;
+            padding-top: 50px;
+        }
+        .socials {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-top: 100px;
+        }
+        .sunnyside-logo {
+            width: 170px;
+            height: 33px;
+            filter: invert(43%) sepia(10%) saturate(2110%) hue-rotate(118deg) brightness(86%) contrast(88%);
+        }
+    }
+}

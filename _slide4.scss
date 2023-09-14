@@ -1,0 +1,27 @@
+.fourth-part {
+    background-image: url("images/photos/image-graphic-design.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 538px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    .heading-cherry {
+        color: #24554A;
+        font-family: 'Fraunces', serif;
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+
+    .text-cherry {
+        color: #24554A;
+        line-height: 27px;
+        width: 350px;
+        font-family: 'Barlow', sans-serif;
+        font-size: 16px;
+        padding-bottom: 50px;
+    }
+}

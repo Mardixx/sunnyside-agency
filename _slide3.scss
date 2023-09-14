@@ -1,0 +1,71 @@
+.third-part {
+    text-align: center;
+
+    .all-slide3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: fit-content;
+        .text-slide3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 90%;
+            height: 100%;
+            .heading3 {
+                line-height: 30px;
+                font-family: 'Fraunces', serif;
+                font-size: 32px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                color: #24303E;
+            }
+            .text-third-part {
+                color: #808397;
+                font-size: 18px;
+                line-height: 30px;
+                padding-bottom: 30px;
+                font-family: 'Barlow', sans-serif;
+            }
+
+            .div-underline-slide3 {
+                padding-bottom: 30px;
+                display: flex;
+                flex-direction: column;
+                transform: translate(0%, -10%);
+                .learnmore-slide3 {
+
+                    color: #24303E;
+                    font-family: 'Fraunces', serif;
+                    font-size: 15px;
+                    height: 25px;
+                    line-height: 25px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    z-index: 1;
+
+                }
+                .underline3 {
+                    background-color: #FE7766;;
+                    transform: translate(0px, -10px);
+                    border-radius: 5px;
+                    height: 10px;
+                    width: 137px;
+                    opacity: 25%;
+                    margin: auto;
+                    z-index: 0;
+                }
+            }
+
+        }
+    
+        .glass {
+            width: 100%;
+        }
+    
+
+    }
+
+    
+}

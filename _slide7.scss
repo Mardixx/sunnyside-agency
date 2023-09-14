@@ -1,0 +1,33 @@
+.photo-part {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    height: 375px;
+    width: 375px;
+
+    .milk {
+        background-image: url("images/photos/image-gallery-milkbottles.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+
+    }
+    .orange-plate {
+        background-image: url("images/photos/image-gallery-orange.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+    }
+    .cone {
+        background-image: url("images/photos/image-gallery-cone.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+    }
+    .sugar {
+        background-image: url("images/photos/image-gallery-sugarcubes.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+    }
+}

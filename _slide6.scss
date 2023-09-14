@@ -1,0 +1,105 @@
+.sixth-part {
+    padding-top: 20%;
+    padding-bottom: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+
+    margin: auto;
+    gap: 100px;
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    color: #5B636D;
+    width: 327px;
+    .sixth-part-heading {
+        font-family: 'Fraunces', serif;
+        font-size: 16px;
+        color: #A7AAAD;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+
+    .emily {
+        
+        .name-job-div {
+            display: flex;
+            flex-direction: column;
+
+            .name {
+                font-family: 'Fraunces', serif;
+                color: #24303E;
+                padding-bottom: 20px;
+            }
+
+            .job {
+                font-family: 'Barlow', sans-serif;
+                color: #A7AAAD;
+            }
+        }
+
+        .emily-img {
+            width: 72px;
+            border-radius: 50%;
+        }
+
+        .emily-p {
+            padding: 30px 0 50px 0;
+            line-height: 32px;
+        }
+    }
+
+    .thomas {
+        .name-job-div {
+            display: flex;
+            flex-direction: column;
+
+            .name {
+                font-family: 'Fraunces', serif;
+                color: #24303E;
+                padding-bottom: 20px;
+            }
+
+            .job {
+                font-family: 'Barlow', sans-serif;
+                color: #A7AAAD;
+            }
+        }
+        .thomas-img {
+            width: 72px;
+            border-radius: 50%;
+        }
+
+        .thomas-p {
+            padding: 30px 0 50px 0;
+            line-height: 32px;
+        }
+    }
+
+    .jennie {
+        .name-job-div {
+            display: flex;
+            flex-direction: column;
+            
+            .name {
+                font-family: 'Fraunces', serif;
+                color: #24303E;
+                padding-bottom: 20px;
+            }
+
+            .job {
+                font-family: 'Barlow', sans-serif;
+                color: #A7AAAD;
+            }
+        }
+        .jennie-img {
+            width: 72px;
+            border-radius: 50%;
+        }
+
+        .jennie-p {
+            padding: 30px 0 50px 0;
+            line-height: 32px;
+        }
+    }
+}
