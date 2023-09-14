@@ -25,3 +25,30 @@
         padding-bottom: 50px;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .fifth-part {
+        background-image: url("images/photos/image-photography.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 538px;
+        float: right;
+        width: 50%;
+    
+        .heading-orange {
+            color: #052C3B;
+            font-family: 'Fraunces', serif;
+            font-size: 28px;
+            padding-bottom: 20px;
+        }
+    
+        .text-orange {
+            color: #052C3B;
+            line-height: 27px;
+            width: 350px;
+            font-family: 'Barlow', sans-serif;
+            font-size: 16px;
+            padding-bottom: 50px;
+        }
+    }
+}

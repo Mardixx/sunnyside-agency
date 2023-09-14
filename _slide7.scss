@@ -31,3 +31,38 @@
         background-size: 100%;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .photo-part {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 100%;
+        width: 100%;
+    
+        .milk {
+            background-image: url("images/photos/image-gallery-milkbottles.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100%;
+    
+        }
+        .orange-plate {
+            background-image: url("images/photos/image-gallery-orange.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100%;
+        }
+        .cone {
+            background-image: url("images/photos/image-gallery-cone.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100%;
+        }
+        .sugar {
+            background-image: url("images/photos/image-gallery-sugarcubes.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100%;
+        }
+    }
+}
