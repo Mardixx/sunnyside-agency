@@ -1,4 +1,4 @@
 # sunnyside-agency
 
 
-Friday: Responsive, Hover for Desktop, Variables, Folders and Images. 
+Friday: Responsive V, Hover for Desktop V, Variables V, Folders and Images V. 

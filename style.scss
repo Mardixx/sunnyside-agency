@@ -3,8 +3,11 @@
 
 html {
     scroll-behavior: smooth;
+    cursor: default;    
 }
 
+
+@import "_variables.scss";
 @import "_reset.css";
 @import "_slide1.scss";
 @import "_slide2.scss";

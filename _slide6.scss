@@ -8,12 +8,12 @@
     gap: 100px;
     font-size: 18px;
     font-family: 'Barlow', sans-serif;
-    color: #5B636D;
+    color: $text-people;
     width: 327px;
     .sixth-part-heading {
         font-family: 'Fraunces', serif;
         font-size: 16px;
-        color: #A7AAAD;
+        color: $heading-people;
         letter-spacing: 4px;
         text-transform: uppercase;
     }
@@ -28,13 +28,13 @@
     
                 .name {
                     font-family: 'Fraunces', serif;
-                    color: #24303E;
+                    color: $text-people;
                     padding-bottom: 20px;
                 }
     
                 .job {
                     font-family: 'Barlow', sans-serif;
-                    color: #A7AAAD;
+                    color: $heading-people;
                 }
             }
     
@@ -56,13 +56,13 @@
     
                 .name {
                     font-family: 'Fraunces', serif;
-                    color: #24303E;
+                    color: $heading-color;
                     padding-bottom: 20px;
                 }
     
                 .job {
                     font-family: 'Barlow', sans-serif;
-                    color: #A7AAAD;
+                    color: $heading-people;
                 }
             }
             .thomas-img {
@@ -83,17 +83,18 @@
                 
                 .name {
                     font-family: 'Fraunces', serif;
-                    color: #24303E;
+                    color: $heading-color;
                     padding-bottom: 20px;
                 }
     
                 .job {
                     font-family: 'Barlow', sans-serif;
-                    color: #A7AAAD;
+                    color: $heading-people;
                 }
             }
             .jennie-img {
                 width: 72px;
+                margin-top: 50px;
                 border-radius: 50%;
             }
     
@@ -115,20 +116,22 @@
         padding: 10% 0 10% 0;
         font-size: 18px;
         font-family: 'Barlow', sans-serif;
-        color: #5B636D;
+        color: $text-people;
         width: 100%;
         .sixth-part-heading {
             font-family: 'Fraunces', serif;
             font-size: 16px;
-            color: #A7AAAD;
+            color: $heading-people;
             letter-spacing: 4px;
             text-transform: uppercase;
         }
     
         .all-people {
             display: flex;
+            margin: auto;
             flex-wrap: nowrap;
             flex-direction: row;
+            width: 80%;
             .emily {
             
                 .name-job-div {
@@ -138,13 +141,13 @@
         
                     .name {
                         font-family: 'Fraunces', serif;
-                        color: #24303E;
+                        color: $heading-color;
                         padding-bottom: 20px;
                     }
         
                     .job {
                         font-family: 'Barlow', sans-serif;
-                        color: #A7AAAD;
+                        color: $heading-people;
                     }
                 }
         
@@ -166,13 +169,13 @@
         
                     .name {
                         font-family: 'Fraunces', serif;
-                        color: #24303E;
+                        color: $heading-color;
                         padding-bottom: 20px;
                     }
         
                     .job {
                         font-family: 'Barlow', sans-serif;
-                        color: #A7AAAD;
+                        color: $heading-people;
                     }
                 }
                 .thomas-img {
@@ -193,16 +196,17 @@
                     
                     .name {
                         font-family: 'Fraunces', serif;
-                        color: #24303E;
+                        color: $heading-color;
                         padding-bottom: 20px;
                     }
         
                     .job {
                         font-family: 'Barlow', sans-serif;
-                        color: #A7AAAD;
+                        color: $heading-people;
                     }
                 }
                 .jennie-img {
+                    margin: 0;
                     width: 72px;
                     border-radius: 50%;
                 }

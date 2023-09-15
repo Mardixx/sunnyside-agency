@@ -10,14 +10,14 @@
     text-align: center;
 
     .heading-cherry {
-        color: #24554A;
+        color: $heading-cherry;
         font-family: 'Fraunces', serif;
         font-size: 28px;
         padding-bottom: 20px;
     }
 
     .text-cherry {
-        color: #24554A;
+        color: $heading-cherry;
         line-height: 27px;
         width: 350px;
         font-family: 'Barlow', sans-serif;
@@ -37,14 +37,14 @@
         width: 50%;
     
         .heading-cherry {
-            color: #24554A;
+            color: $heading-cherry;
             font-family: 'Fraunces', serif;
             font-size: 28px;
             padding-bottom: 20px;
         }
     
         .text-cherry {
-            color: #24554A;
+            color: $heading-cherry;
             line-height: 27px;
             width: 350px;
             font-family: 'Barlow', sans-serif;

@@ -13,17 +13,84 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     height: 538px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
     .burger-menu {
         position: absolute;
         top: 32px;
         right: 24px;
+        width: 90%;
+        height: 0%;
 
         .burger-checkbox {
             display: none;
+            position: absolute;
+            top: -3px;
+            left: 3px;
+            width: 24px;
+            height: 18px;
             
         }
+        .burger-checkbox:checked ~ .navbar-content{
+            display: block;
+            position: absolute;
+            top: 60px;
+            text-align: center;
+            width: 100%;
+            background-color: white;
+
+            .triangle {
+                border-left: 5px solid transparent;
+                border-right: 20px solid $color-white;
+                border-right-width: 20px;
+                border-top: 5px solid transparent;
+                border-top-width: 20px;
+                border-bottom: 5px solid transparent;
+                position: absolute;
+                top: -20px;
+                right: 0;
+                height: 0px;
+                width: 10px;
+                z-index: 99;
+
+            }
+
+            .navlist {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                width: 140px;
+                height: 56px;
+            }
+            .navlistContact {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                width: 140px;
+                height: 56px;
+                border-radius: 50px;
+                background-color: $yellow-underline;
+            }
+        }
+        .burger {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
     }
+
+
     
     .design {
         text-align: center;
@@ -32,7 +99,7 @@ body {
         .heading {
             font-size: 40px;
             text-transform: uppercase;
-            color: white;
+            color: $color-white;
             line-height: 50px;
             font-family: 'Fraunces', serif;  
             padding-bottom: 50px; 
@@ -64,31 +131,70 @@ body {
         width: 100%;
         height: 900px;
 
-        .navbar {
+        .navbar-mobile {
+            display: none;
+        }
+
+        .navbar-desktop {
             height: 33px;
             display: flex;
             justify-content: space-evenly;
             width: 100%;
-            color: white
-            ;
-            .navbar-content {
-                display: flex;
-                justify-content: space-evenly;
-                width: 600px;
-                flex-direction: row;
-            }
+            color: $color-white;
+            
 
             .burger-menu {
                 position: absolute;
                 top: 32px;
                 right: 24px;
-        
-                .burger-checkbox {
-                    display: none;
-                    
-                }
-                .burger {
-                    display: none;
+                
+                 
+
+                .navbar-content{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    flex-direction: row;
+                    position: absolute;
+                    right: 10px;
+                    width: 600px;
+                    height: 56px;
+    
+                   .navlist {
+                    display: flex; 
+                    justify-content: center;
+                    height: 56px;
+                    width: 140px;
+                    font-family: 'Fraunces', serif;
+                    font-size: 15px;
+                    align-items: center;
+                    line-height: 25px;
+                    letter-spacing: -0,11px;
+                   }
+    
+                   .navlistContact {
+
+                    display: flex; 
+                    justify-content: center;
+                    height: 56px;
+                    width: 140px;
+                    font-family: 'Fraunces', serif;
+                    font-size: 15px;
+                    align-items: center;
+                    line-height: 25px;
+                    letter-spacing: -0,11px;
+                    color: black;
+                    background-color: white;
+                    border-radius: 50px;
+                    text-transform: uppercase;  
+                    &:hover {
+                        border-radius: 50px;
+                        color: $color-white;
+                        background-color: rgba($color: #fff, $alpha: 0.2);
+                        text-transform: uppercase;  
+                       
+                    }
+                   }
                 }
             }
             
@@ -104,7 +210,7 @@ body {
             .heading {
                 font-size: 56px;
                 text-transform: uppercase;
-                color: white;
+                color: $color-white;
                 line-height: 69px;
                 font-family: 'Fraunces', serif;  
                 padding-bottom: 100px; 

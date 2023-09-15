@@ -15,16 +15,29 @@
 
 <body>
   <header class="first-part">
-    <div class="navbar">
+    <div class="navbar-mobile">
       <img class="logo" src="images/logo.svg">
       <label class="burger-menu">
         <input type="checkbox" class="burger-checkbox" unchecked>
         <img class="burger" src="images/icons/icon-hamburger.svg">
         <ul class="navbar-content">
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <div class="triangle"></div>
+          <li class="navlist">About</li>
+          <li class="navlist">Services</li>
+          <li class="navlist">Projects</li>
+          <li class="navlist navlistContact">Contact</li>
+        </ul>
+      </label>
+    </div>
+    <div class="navbar-desktop">
+      <img class="logo" src="images/logo.svg">
+      <label class="burger-menu">
+        <ul class="navbar-content">
+          <div class="triangle"></div>
+          <li class="navlist">About</li>
+          <li class="navlist">Services</li>
+          <li class="navlist">Projects</li>
+          <li class="navlist navlistContact">Contact</li>
         </ul>
       </label>
     </div>
@@ -77,38 +90,39 @@
     </p>
   </section>
   <section class="sixth-part">
-  <h2 class="sixth-part-heading">Client testimonials</h2>
-   <div class="all-people">
-    <div class="emily">
-      <img class="emily-img" src="images/people/image-emily.jpg">
-      <p class="emily-p"> We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines
-        were always hit.</p>
-      <div class="name-job-div">
-        <span class="name">Emily R.</span>
-        <span class="job">Marketing Director</span>
+    <h2 class="sixth-part-heading">Client testimonials</h2>
+    <div class="all-people">
+      <div class="emily">
+        <img class="emily-img" src="images/people/image-emily.jpg">
+        <p class="emily-p"> We put our trust in Sunnyside and they delivered, making sure our needs were met and
+          deadlines
+          were always hit.</p>
+        <div class="name-job-div">
+          <span class="name">Emily R.</span>
+          <span class="job">Marketing Director</span>
+        </div>
       </div>
-    </div>
 
-    <div class="thomas">
-      <img class="thomas-img" src="images/people/image-thomas.jpg">
-      <p class="thomas-p"> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
-        satisfying and enjoyable experience.</p>
-      <div class="name-job-div">
-        <span class="name">Thomas S.</span>
-        <span class="job">Chief Operating Officer</span>
+      <div class="thomas">
+        <img class="thomas-img" src="images/people/image-thomas.jpg">
+        <p class="thomas-p"> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
+          satisfying and enjoyable experience.</p>
+        <div class="name-job-div">
+          <span class="name">Thomas S.</span>
+          <span class="job">Chief Operating Officer</span>
+        </div>
       </div>
-    </div>
-    <div class="jennie">
-      <img class="jennie-img" src="images/people/image-jennie.jpg">
-      <p class="jennie-p"> Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly
-        recommended!</p>
-      <div class="name-job-div">
-        <span class="name">Jennie F.</span>
-        <span class="job">Business Owner</span>
+      <div class="jennie">
+        <img class="jennie-img" src="images/people/image-jennie.jpg">
+        <p class="jennie-p"> Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly
+          recommended!</p>
+        <div class="name-job-div">
+          <span class="name">Jennie F.</span>
+          <span class="job">Business Owner</span>
+        </div>
       </div>
-    </div>
   </section>
-</div>
+  </div>
   <section class="photo-part">
     <div class="milk"></div>
     <div class="orange-plate"></div>
@@ -119,25 +133,18 @@
     <div class="footer-info">
       <img class="sunnyside-logo" src="images/logo.svg">
       <ul class="footer-things">
-        <li>About</li>
-        <li>Services</li>
-        <li>Projects</li>
+        <li class="footer-list">About</li>
+        <li class="footer-list">Services</li>
+        <li class="footer-list">Projects</li>
       </ul>
       <ul class="socials">
-        <li><img src="images/icons/icon-facebook.svg"></li>
-        <li><img src="images/icons/icon-instagram.svg"></li>
-        <li><img src="images/icons/icon-twitter.svg"></li>
-        <li><img src="images/icons/icon-pinterest.svg"></li>
+        <li><img class="footer-img" src="images/icons/icon-facebook.svg"></li>
+        <li><img class="footer-img" src="images/icons/icon-instagram.svg"></li>
+        <li><img class="footer-img" src="images/icons/icon-pinterest.svg"></li>
+        <li><img class="footer-img" src="images/icons/icon-twitter.svg"></li>
       </ul>
     </div>
   </footer>
-  <!-- 
-
-  About
-  Services
-  Projects
-  Contact -->
-
 </body>
 
 </html>

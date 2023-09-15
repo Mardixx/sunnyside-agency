@@ -21,11 +21,11 @@
                 font-size: 32px;
                 padding-top: 30px;
                 padding-bottom: 30px;
-                color: #24303E;
+                color: $heading-color;
             }
 
             .text-third-part {
-                color: #808397;
+                color: $text-color;
                 font-size: 18px;
                 line-height: 30px;
                 padding-bottom: 30px;
@@ -40,7 +40,7 @@
 
                 .learnmore-slide3 {
 
-                    color: #24303E;
+                    color: $heading-color;
                     font-family: 'Fraunces', serif;
                     font-size: 15px;
                     height: 25px;
@@ -52,7 +52,7 @@
                 }
 
                 .underline3 {
-                    background-color: #FE7766;
+                    background-color: $pink-underline;
                     ;
                     transform: translate(0px, -10px);
                     border-radius: 5px;
@@ -81,13 +81,14 @@
 
         .all-slide3 {
             display: flex;
-            text-align: start;
             flex-direction: row;
     
             .text-slide3 {
                 display: flex;
-                width: 50%;
-                transform: translate(20%, 0%);
+                flex-direction: column;
+                text-align: start;
+                width: 40%;
+                padding-left: 10%;
     
                 .heading3 {
                     line-height: 30px;
@@ -95,12 +96,12 @@
                     font-size: 32px;
                     padding-top: 30px;
                     padding-bottom: 30px;
-                    color: #24303E;
+                    color: $heading-color;
                     width: 445px;
                 }
     
                 .text-third-part {
-                    color: #808397;
+                    color: $text-color;
                     font-size: 18px;
                     line-height: 30px;
                     padding-bottom: 30px;
@@ -110,13 +111,16 @@
                 }
     
                 .div-underline-slide3 {
-                    padding-bottom: 30px;
+                    padding: 0;
+                    height: fit-content ;
                     display: flex;
                     flex-direction: column;
+                    justify-content: flex-start;
+                    align-self: flex-start;
+                    
     
                     .learnmore-slide3 {
-    
-                        color: #24303E;
+                        color: $heading-color;
                         font-family: 'Fraunces', serif;
                         font-size: 15px;
                         height: 25px;
@@ -128,15 +132,19 @@
                     }
     
                     .underline3 {
-                        background-color: #FE7766;
-                        
-                        transform: translate(-250%, -100%);
+                        background-color: $pink-underline;
                         border-radius: 5px;
+                        transform: translate(-10px, -10px);
                         height: 10px;
                         width: 137px;
                         opacity: 25%;
                         margin: auto;
                         z-index: 0;
+                    }
+
+                    &:hover > .underline3{
+                        background-color: $pink-underline;
+                        opacity: 100%;
                     }
                 }
     
@@ -144,6 +152,7 @@
     
             .glass {
                 width: 50%;
+                float: left;
             }
     
     

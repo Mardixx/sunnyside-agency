@@ -1,5 +1,5 @@
 footer {
-    background-color: #90D4C6;
+    background-color: $background-footer;
     height: 350px;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@ footer {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            color: #458D7E;
+            color: $footer-things;
             font-family: 'Barlow', sans-serif;
             font-size: 18px;
             padding-top: 50px;
@@ -34,7 +34,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
     footer {
-        background-color: #90D4C6;
+        background-color: $background-footer;
         height: 350px;
         display: flex;
         justify-content: center;
@@ -48,16 +48,30 @@ footer {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                color: #458D7E;
+                color: $footer-things;
                 font-family: 'Barlow', sans-serif;
                 font-size: 18px;
                 padding-top: 50px;
+
+                .footer-list {
+
+                &:hover {
+                    color: $color-white;
+                }
+                }
             }
             .socials {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
                 padding-top: 100px;
+
+                .footer-img {
+
+                    &:hover {
+                        filter: brightness(0) invert(100%);
+                    }
+                }
             }
             .sunnyside-logo {
                 width: 170px;

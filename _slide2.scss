@@ -18,10 +18,10 @@
                 font-size: 32px;
                 padding-top: 30px;
                 padding-bottom: 30px;
-                color: #24303E;
+                color: $heading-color;
             }
             .text-second-part {
-                color: #808397;
+                color: $text-color;
                 font-size: 18px;
                 line-height: 30px;
                 padding-bottom: 30px;
@@ -35,7 +35,7 @@
                 transform: translate(0%, -10%);
                 .learnmore-slide2 {
 
-                    color: #24303E;
+                    color: $heading-color;
                     font-family: 'Fraunces', serif;
                     font-size: 15px;
                     height: 25px;
@@ -46,7 +46,7 @@
 
                 }
                 .underline2 {
-                    background-color: #FAD400;;
+                    background-color: $yellow-underline;
                     transform: translate(0px, -10px);
                     border-radius: 5px;
                     height: 10px;
@@ -78,19 +78,19 @@
                 display: flex;
                 flex-direction: column;
                 text-align:start;
-                width: 50%;
-                transform: translate(20%, 0%);
+                width: 40%;
+                padding-left: 10%;
                 .heading2 {
                     line-height: 30px;
                     font-family: 'Fraunces', serif;
                     font-size: 32px;
                     padding-top: 30px;
                     padding-bottom: 30px;
-                    color: #24303E;
-                    width: 50%;
+                    color: $heading-color;
+                    width: 445px;
                 }
                 .text-second-part {
-                    color: #808397;
+                    color: $text-color;
                     font-size: 18px;
                     line-height: 30px;
                     padding-bottom: 30px;
@@ -101,13 +101,14 @@
                 }
     
                 .div-underline-slide2 {
-                    padding-bottom: 30px;
+                    padding-bottom: 0px;
+                    height: fit-content;
                     display: flex;
                     flex-direction: column;
-                    transform: translate(0%, -10%);
+                    justify-content: flex-start;
+                    align-self: flex-start;
                     .learnmore-slide2 {
-    
-                        color: #24303E;
+                        color: $heading-color;
                         font-family: 'Fraunces', serif;
                         font-size: 15px;
                         height: 25px;
@@ -118,14 +119,19 @@
     
                     }
                     .underline2 {
-                        background-color: #FAD400;;
+                        background-color: $yellow-underline;
+                        transform: translate(-10px, -10px);
                         border-radius: 5px;
                         height: 10px;
                         width: 137px;
                         opacity: 25%;
                         margin: auto;
                         z-index: 0;
-                        transform: translate(-250%, -100%);
+                    }
+                    
+                    &:hover > .underline2{
+                        background-color: $yellow-underline;
+                        opacity: 100%;
                     }
                 }
     
@@ -133,6 +139,7 @@
         
             .egg {
                 width: 50%;
+                
             }
         
     

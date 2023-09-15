@@ -10,14 +10,14 @@
     text-align: center;
 
     .heading-orange {
-        color: #052C3B;
+        color: $heading-orange;
         font-family: 'Fraunces', serif;
         font-size: 28px;
         padding-bottom: 20px;
     }
 
     .text-orange {
-        color: #052C3B;
+        color: $heading-orange;
         line-height: 27px;
         width: 350px;
         font-family: 'Barlow', sans-serif;
@@ -36,14 +36,14 @@
         width: 50%;
     
         .heading-orange {
-            color: #052C3B;
+            color: $heading-orange;
             font-family: 'Fraunces', serif;
             font-size: 28px;
             padding-bottom: 20px;
         }
     
         .text-orange {
-            color: #052C3B;
+            color: $heading-orange;
             line-height: 27px;
             width: 350px;
             font-family: 'Barlow', sans-serif;

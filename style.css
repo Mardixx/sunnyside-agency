@@ -3,6 +3,7 @@
 @import "_reset.css";
 html {
   scroll-behavior: smooth;
+  cursor: default;
 }
 
 body {
@@ -20,14 +21,74 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   height: 538px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 .first-part .burger-menu {
   position: absolute;
   top: 32px;
   right: 24px;
+  width: 90%;
+  height: 0%;
 }
 .first-part .burger-menu .burger-checkbox {
   display: none;
+  position: absolute;
+  top: -3px;
+  left: 3px;
+  width: 24px;
+  height: 18px;
+}
+.first-part .burger-menu .burger-checkbox:checked ~ .navbar-content {
+  display: block;
+  position: absolute;
+  top: 60px;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+}
+.first-part .burger-menu .burger-checkbox:checked ~ .navbar-content .triangle {
+  border-left: 5px solid transparent;
+  border-right: 20px solid white;
+  border-right-width: 20px;
+  border-top: 5px solid transparent;
+  border-top-width: 20px;
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  top: -20px;
+  right: 0;
+  height: 0px;
+  width: 10px;
+  z-index: 99;
+}
+.first-part .burger-menu .burger-checkbox:checked ~ .navbar-content .navlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 140px;
+  height: 56px;
+}
+.first-part .burger-menu .burger-checkbox:checked ~ .navbar-content .navlistContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 140px;
+  height: 56px;
+  border-radius: 50px;
+  background-color: #FAD400;
+}
+.first-part .burger-menu .burger {
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 .first-part .design {
   text-align: center;
@@ -63,29 +124,62 @@ body {
     width: 100%;
     height: 900px;
   }
-  .first-part .navbar {
+  .first-part .navbar-mobile {
+    display: none;
+  }
+  .first-part .navbar-desktop {
     height: 33px;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     color: white;
   }
-  .first-part .navbar .navbar-content {
-    display: flex;
-    justify-content: space-evenly;
-    width: 600px;
-    flex-direction: row;
-  }
-  .first-part .navbar .burger-menu {
+  .first-part .navbar-desktop .burger-menu {
     position: absolute;
     top: 32px;
     right: 24px;
   }
-  .first-part .navbar .burger-menu .burger-checkbox {
-    display: none;
+  .first-part .navbar-desktop .burger-menu .navbar-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    right: 10px;
+    width: 600px;
+    height: 56px;
   }
-  .first-part .navbar .burger-menu .burger {
-    display: none;
+  .first-part .navbar-desktop .burger-menu .navbar-content .navlist {
+    display: flex;
+    justify-content: center;
+    height: 56px;
+    width: 140px;
+    font-family: "Fraunces", serif;
+    font-size: 15px;
+    align-items: center;
+    line-height: 25px;
+    letter-spacing: 0, 11px;
+  }
+  .first-part .navbar-desktop .burger-menu .navbar-content .navlistContact {
+    display: flex;
+    justify-content: center;
+    height: 56px;
+    width: 140px;
+    font-family: "Fraunces", serif;
+    font-size: 15px;
+    align-items: center;
+    line-height: 25px;
+    letter-spacing: 0, 11px;
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+  }
+  .first-part .navbar-desktop .burger-menu .navbar-content .navlistContact:hover {
+    border-radius: 50px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
   }
   .first-part .design {
     text-align: center;
@@ -185,8 +279,8 @@ body {
     display: flex;
     flex-direction: column;
     text-align: start;
-    width: 50%;
-    transform: translate(20%, 0%);
+    width: 40%;
+    padding-left: 10%;
   }
   .second-part .all-slide2 .text-slide2 .heading2 {
     line-height: 30px;
@@ -195,7 +289,7 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
     color: #24303E;
-    width: 50%;
+    width: 445px;
   }
   .second-part .all-slide2 .text-slide2 .text-second-part {
     color: #808397;
@@ -207,10 +301,13 @@ body {
     width: 445px;
   }
   .second-part .all-slide2 .text-slide2 .div-underline-slide2 {
-    padding-bottom: 30px;
+    padding-bottom: 0px;
+    height: -moz-fit-content;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    transform: translate(0%, -10%);
+    justify-content: flex-start;
+    align-self: flex-start;
   }
   .second-part .all-slide2 .text-slide2 .div-underline-slide2 .learnmore-slide2 {
     color: #24303E;
@@ -224,13 +321,17 @@ body {
   }
   .second-part .all-slide2 .text-slide2 .div-underline-slide2 .underline2 {
     background-color: #FAD400;
+    transform: translate(-10px, -10px);
     border-radius: 5px;
     height: 10px;
     width: 137px;
     opacity: 25%;
     margin: auto;
     z-index: 0;
-    transform: translate(-250%, -100%);
+  }
+  .second-part .all-slide2 .text-slide2 .div-underline-slide2:hover > .underline2 {
+    background-color: #FAD400;
+    opacity: 100%;
   }
   .second-part .all-slide2 .egg {
     width: 50%;
@@ -302,13 +403,14 @@ body {
 @media only screen and (min-width: 768px) {
   .third-part .all-slide3 {
     display: flex;
-    text-align: start;
     flex-direction: row;
   }
   .third-part .all-slide3 .text-slide3 {
     display: flex;
-    width: 50%;
-    transform: translate(20%, 0%);
+    flex-direction: column;
+    text-align: start;
+    width: 40%;
+    padding-left: 10%;
   }
   .third-part .all-slide3 .text-slide3 .heading3 {
     line-height: 30px;
@@ -329,9 +431,13 @@ body {
     width: 445px;
   }
   .third-part .all-slide3 .text-slide3 .div-underline-slide3 {
-    padding-bottom: 30px;
+    padding: 0;
+    height: -moz-fit-content;
+    height: fit-content;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
   }
   .third-part .all-slide3 .text-slide3 .div-underline-slide3 .learnmore-slide3 {
     color: #24303E;
@@ -345,16 +451,21 @@ body {
   }
   .third-part .all-slide3 .text-slide3 .div-underline-slide3 .underline3 {
     background-color: #FE7766;
-    transform: translate(-250%, -100%);
     border-radius: 5px;
+    transform: translate(-10px, -10px);
     height: 10px;
     width: 137px;
     opacity: 25%;
     margin: auto;
     z-index: 0;
   }
+  .third-part .all-slide3 .text-slide3 .div-underline-slide3:hover > .underline3 {
+    background-color: #FE7766;
+    opacity: 100%;
+  }
   .third-part .all-slide3 .glass {
     width: 50%;
+    float: left;
   }
 }
 .fourth-part {
@@ -485,7 +596,7 @@ body {
 }
 .sixth-part .all-people .emily .name-job-div .name {
   font-family: "Fraunces", serif;
-  color: #24303E;
+  color: #5B636D;
   padding-bottom: 20px;
 }
 .sixth-part .all-people .emily .name-job-div .job {
@@ -536,6 +647,7 @@ body {
 }
 .sixth-part .all-people .jennie .jennie-img {
   width: 72px;
+  margin-top: 50px;
   border-radius: 50%;
 }
 .sixth-part .all-people .jennie .jennie-p {
@@ -564,8 +676,10 @@ body {
   }
   .sixth-part .all-people {
     display: flex;
+    margin: auto;
     flex-wrap: nowrap;
     flex-direction: row;
+    width: 80%;
   }
   .sixth-part .all-people .emily .name-job-div {
     display: flex;
@@ -624,6 +738,7 @@ body {
     color: #A7AAAD;
   }
   .sixth-part .all-people .jennie .jennie-img {
+    margin: 0;
     width: 72px;
     border-radius: 50%;
   }
@@ -637,7 +752,7 @@ body {
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   height: 375px;
-  width: 375px;
+  width: 100%;
 }
 .photo-part .milk {
   background-image: url("images/photos/image-gallery-milkbottles.jpg");
@@ -646,22 +761,25 @@ body {
   background-size: 100%;
 }
 .photo-part .orange-plate {
-  background-image: url("images/photos/image-gallery-orange.jpg");
+  background-image: url("images/photos/image-gallery-milkbottles.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
+  background-image: url("images/photos/image-gallery-orange.jpg");
 }
 .photo-part .cone {
-  background-image: url("images/photos/image-gallery-cone.jpg");
+  background-image: url("images/photos/image-gallery-milkbottles.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
+  background-image: url("images/photos/image-gallery-cone.jpg");
 }
 .photo-part .sugar {
-  background-image: url("images/photos/image-gallery-sugarcubes.jpg");
+  background-image: url("images/photos/image-gallery-milkbottles.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
+  background-image: url("images/photos/image-gallery-sugarcubes.jpg");
 }
 
 @media only screen and (min-width: 768px) {
@@ -678,22 +796,25 @@ body {
     background-size: 100%;
   }
   .photo-part .orange-plate {
-    background-image: url("images/photos/image-gallery-orange.jpg");
+    background-image: url("images/photos/image-gallery-milkbottles.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
+    background-image: url("images/photos/image-gallery-orange.jpg");
   }
   .photo-part .cone {
-    background-image: url("images/photos/image-gallery-cone.jpg");
+    background-image: url("images/photos/image-gallery-milkbottles.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
+    background-image: url("images/photos/image-gallery-cone.jpg");
   }
   .photo-part .sugar {
-    background-image: url("images/photos/image-gallery-sugarcubes.jpg");
+    background-image: url("images/photos/image-gallery-milkbottles.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
+    background-image: url("images/photos/image-gallery-sugarcubes.jpg");
   }
 }
 footer {
@@ -751,11 +872,17 @@ footer .footer-info .sunnyside-logo {
     font-size: 18px;
     padding-top: 50px;
   }
+  footer .footer-info .footer-things .footer-list:hover {
+    color: white;
+  }
   footer .footer-info .socials {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 100px;
+  }
+  footer .footer-info .socials .footer-img:hover {
+    filter: brightness(0) invert(100%);
   }
   footer .footer-info .sunnyside-logo {
     width: 170px;
